@@ -1,0 +1,80 @@
+<QtHelpProject version="1.0">
+<namespace>Medfisis.app.1_1</namespace>
+<virtualFolder>doc</virtualFolder>
+<customFilter name="Medfisis 1.1">
+	<filterAttribute>Medfisis</filterAttribute>
+	<filterAttribute>1.1</filterAttribute>
+</customFilter>
+<filterSection>
+<filterAttribute>Medfisis</filterAttribute>
+<filterAttribute>1.1</filterAttribute>
+ <toc>
+	<section title="Medfisis 1.1 Manual" ref="index.htm">
+	<section title="Introduction" ref="user_guide_10_01_2012.html#mozTocId386761"/>
+	<section title="Chapter 1: Overview of Medfisis 1.1" ref="user_guide_10_01_2012.html#mozTocId42934">	
+		<section title="Nature of the Information Supported by MedFisis" ref="user_guide_10_01_2012.html#mozTocId190600"/>
+		<section title="The Sampling Process" ref="user_guide_10_01_2012.html#mozTocId955812"/>
+		<section title="Rational of Data Hierarchy" ref="user_guide_10_01_2012.html#mozTocId424567">			
+			<section title="Navigation Through out the Forms" ref="user_guide_10_01_2012.html#mozTocId820713"/>		
+		</section>
+	</section>
+	<section title="Chapter 2: How to Store Fishery Data" ref="user_guide_10_01_2012.html#mozTocId667469">
+		<section title="Creating the Sampling frame" ref="user_guide_10_01_2012.html#mozTocId46540">
+			<section title="Create a new frame from scratch" ref="user_guide_10_01_2012.html#mozTocId859248"/>		
+			<section title="Create a new frame by copy a pre-existent one" ref="user_guide_10_01_2012.html#mozTocId527307"/>
+			<section title="Initialise a pre-existent frame" ref="user_guide_10_01_2012.html#mozTocId916692"/>					
+			<section title="Define the Time Validity" ref="user_guide_10_01_2012.html#mozTocId539043"/>
+			<section title="Define the sampling process" ref="user_guide_10_01_2012.html#mozTocId41378"/>								
+		</section>			
+		<section title="Define Minor Strata" ref="user_guide_10_01_2012.html#mozTocId198272"/>													
+		<section title="Define the Cell Level" ref="user_guide_10_01_2012.html#mozTocId271577"/>
+		<section title="Identify the Vessels Type" ref="user_guide_10_01_2012.html#mozTocId530427"/>
+		<section title="Identify the Vessels" ref="user_guide_10_01_2012.html#mozTocId374862"/>
+		<section title="Enter the fishing Trip" ref="user_guide_10_01_2012.html#mozTocId554813"/>
+		<section title="Characterise the Fishing Operations" ref="user_guide_10_01_2012.html#mozTocId325239"/>
+		<section title="Enter the Catch Data" ref="user_guide_10_01_2012.html#mozTocId234795"/>			
+	</section>	
+	<section title="Chapter 3: Reports" ref="user_guide_10_01_2012.html#mozTocId46287">
+		<section title="Use pre-defined reports" ref="user_guide_10_01_2012.html#mozTocId490244"/>		
+		<section title="Create new reports" ref="user_guide_10_01_2012.html#mozTocId132702"/>	
+	</section>
+	<section title="Glossary" ref="user_guide_10_01_2012.html#mozTocId948642"/>	
+	</section>	
+</toc>
+
+<keywords>
+	<keyword name="logbooks" id="Medfisis::logbooks" ref="user_guide_10_01_2012.html#logbooks"/>
+	<keyword name="glossary" id="Medfisis::glossary" ref="user_guide_10_01_2012.html#mozTocId948642"/>
+	<keyword name="artisanal fisheries" id="Medfisis::artisanal_fisheries" ref="user_guide_10_01_2012.html#artisanal"/>
+	<keyword name="the sampling process" id="Medfisis::the_sampling_process" ref="user_guide_10_01_2012.html#mozTocId955812"/>
+	<keyword name="comments" id="Medfisis::comments_window" ref="user_guide_10_01_2012.html#comments_window"/>
+	<keyword name="create a new frame from scratch" id="Medfisis::new_frame_scratch" ref="user_guide_10_01_2012.html#mozTocId859248"/>
+	<keyword name="geographical frame" id="Medfisis::geographical_frame" ref="user_guide_10_01_2012.html#geographical_frame"/>
+	<keyword name="create new record" id="Medfisis::create_new_record" ref="user_guide_10_01_2012.html#create_new_record"/>
+	<keyword name="create a new frame by copy a pre-existent one" id="Medfisis::frame_existing" ref="user_guide_10_01_2012.html#mozTocId527307"/> 
+	<keyword name="initialise a pre-existent frame" id="Medfisis::pre-existent_frame" ref="user_guide_10_01_2012.html#mozTocId527307"/>
+	<keyword name="data hierarchy" id="Medfisis::data_hierarchy" ref="user_guide_10_01_2012.html#mozTocId424567"/>
+	<keyword name="navigation through forms" id="Medfisis::navigation" ref="user_guide_10_01_2012.html#mozTocId820713"/>
+	<keyword name="edit" id="Medfisis::edit" ref="user_guide_10_01_2012.html#Editing_Button"/>
+	<keyword name="context help" id="Medfisis::help" ref="user_guide_10_01_2012.html#context_help"/>
+	<keyword name="help function" id="Medfisis::help_function" ref="user_guide_10_01_2012.html#help_function"/>
+	<keyword name="navigation buttons" id="Medfisis::navigation_buttons" ref="user_guide_10_01_2012.html#navigation_buttons"/>
+	<keyword name="editing button" id="Medfisis::editing button" ref="user_guide_10_01_2012.html#Editing_Button"/>
+	<keyword name="time validity" id="Medfisis::time_validity" ref="user_guide_10_01_2012.html#time_validity"/>
+	<keyword name="minor strata" id="Medfisis::define_minor_strata" ref="user_guide_10_01_2012.html#mozTocId198272"/>
+	<keyword name="vessel type" id="Medfisis::identify_vessel_type" ref="user_guide_10_01_2012.html#identify_vessel_type"/>
+	<keyword name="cell" id="Medfisis::define_cell_level" ref="user_guide_10_01_2012.html#mozTocId271577"/>
+	<keyword name="fishing operation" id="Medfisis::characterise_fishing_operation" ref="user_guide_10_01_2012.html#mozTocId325239"/>
+	<keyword name="catch data" id="Medfisis::enter_catch_data" ref="user_guide_10_01_2012.html#mozTocId234795"/>
+</keywords>
+
+<files>
+	<file>classic.css</file>
+	<file>index.htm</file>
+	<file>user_guide_10_01_2012.html</file>
+</files>
+</filterSection>
+</QtHelpProject>
+
+
+

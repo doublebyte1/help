@@ -1,0 +1,2 @@
+Medfisis 'e um pacote de softwares com Ferramentas de gestao de Pescas.
+O seu design flexivel permite-lhe integrar dados de logbook, lado a lado com dados de pesca artesanal.

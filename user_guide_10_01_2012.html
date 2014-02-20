@@ -1,0 +1,540 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+<style type="text/css">
+<!--
+@page
+	{margin-left:3cm;
+	margin-right:3cm;
+	margin-top:2.5cm;
+	margin-bottom:2.5cm}
+p
+	{margin-bottom:0.21cm;
+	direction:ltr;
+	color:#000000;
+	widows:2;
+	orphans:2}
+-->
+</style>
+</head>
+<body dir="LTR" lang="pt-PT" style="color:rgb(0,0,0)">
+<h1><a class="mozTocH1" name="mozTocId386761"><span style="font-family:Arial">INTRODUCTION</span></a><br>
+</h1>
+<p style="font-family:Arial"><span style="font-family:Arial">Medfisis is a package for the storage, management and processing of fisheries Census, sampling and Logbook, based on differently currently existing systems (like ArtFish, PescArte, Medfisis and others).</span>
+ The objective is to have a <strong>free and open-source solution</strong>, that can be used, maintained and customized in developing countries, on a zero-cost basis.</p>
+<p><span style="font-family:Arial">This user guide is composed by three main chapters. The first chapter focused on main features supported by Medfisis, giving details on information supported, how information is organised and&nbsp; presented to the user, and how
+ user navigates through out the interface forms to enter data</span>.</p>
+<p style="font-family:Arial">The second chapter gives insight details on the process of data storage for both data sources, artisanal fisheries and logbooks. A set of screen-shots of the application had been introduced in order to facilitate a good comprehension
+ of the contents.<br>
+(...)<br>
+</p>
+<h1><a class="mozTocH1" name="mozTocId42934">OVERVIEW OF MEDFISIS 1.1</a></h1>
+<span style="font-family:Arial"></span>
+<h2 style="margin-bottom:0.35cm; font-family:Arial"><a class="mozTocH2" name="mozTocId190600"><span lang="en-US"><b>NATURE OF THE INFORMATION SUPPORTED BY MedFisis 1.1<br>
+</b></span></a></h2>
+<span style="font-family:Arial"></span>
+<p style="font-family:Arial">Medfisis consider two standard sampling processes: logbook and artisanal fisheries. Basically it offers capability to store and manage two distinct types of fisheries information, census and sampling data, typified as logbooks and
+ artisanal fisheries. </p>
+<p style="margin-bottom:0.35cm; font-family:Arial"><span style="font-weight:bold"><a name="logbooks">logbooks</a></span>: Typically the data source for semi-industrial and industrial fisheries, consisting of reports submitted by companies, vessel’s legal representative
+ (master, captain, owner, etc.) giving detailed information on individual fishing operations, including fishing grounds, type and duration of operation, fishing gears, catch by species, etc..</p>
+<p style="margin-bottom:0.35cm; font-family:Arial">Current version of Medfisis, only supports information of catches organized by commercial category, i.e., by identifying group of species (e.g Small gregarious pelagic, Large pelagic, etc.). For further details
+ about <span style="font-weight:bold">Commercial Category</span> please consult the
+<span style="font-weight:bold">glossary</span>. </p>
+<p style="margin-bottom:0.35cm; font-family:Arial">Even though in theory the logbooks as a data source consists of a census approach, for several circumstances sometimes logbooks are not completely collected, resulting in incomplete and inaccurate fisheries
+ information. To overcome such circumstances some methodologies for <span style="font-weight:bold">
+data raising</span> can be applied. MedFisis supports the integration of such process to
+<span style="font-weight:bold">Manage Logbook Data</span>.&nbsp; Another important feature is the ability to store non census information for cross checking fishing logs.</p>
+<p style="margin-bottom:0.35cm; font-family:Arial"><span style="font-weight:bold"><a name="artisanal">Artisanal fisheries</a></span>: Include all kind of fisheries to which information is collected with questionnaires, interviews or direct observations on the
+ fishing vessels, at landing sites, processing plants, or in markets. Variables that enumerators can collect include catch (landing and discards), effort, vessel/gears, operations, biological variables (e.g. weight; length; sex, etc.), the values and quantities
+ of landings and sales. </p>
+<p style="margin-bottom:0.35cm; font-family:Arial">Along with information on effort and catch, MedFisis support information taken from biological sampling, like sample dimension -
+<span style="font-weight:bold">number of sampled individuals</span> - and the average weight per individual. Further developments will allow the storage of additional variables coming from biological sampling, such as length, ages and sex.
+<br>
+</p>
+<h2 style="margin-bottom:0.35cm; font-family:Arial"><a class="mozTocH2" name="mozTocId955812">THE SAMPLING PROCESS</a></h2>
+<p style="margin-bottom:0.35cm; font-family:Arial">The collection of fisheries data is in most situations an expensive and hard task to execute. Mainly due to the nature of the fishing activity (spread along the countries coast, ...) , but also for the lack
+ of accuracy of the information that sometimes is provided as well as for the difficulty it may represents for the fishermen, mainly artisanal, to answer and fill in such complex forms to deliver data. Sampling approach is more cost-effective approach then
+ total enumeration process and if sampling design is well tailored to the fishery it will produce accurate results.<br>
+</p>
+<p style="margin-bottom:0.35cm; font-family:Arial">On the other hand, the collection of 100% fishing reports, such as logbooks, is most of the times not reachable. If these data is not inspected a posteriori in order to overcome the possible problem of misrepresentation
+ and inaccuracy it may lead to the production of biased and incomplete estimates.
+<br>
+</p>
+<p style="margin-bottom:0.35cm; font-family:Arial">MedFisis integrate the possibility to store and manage census data and sampling data, both for artisanal fisheries and logbook (industrial fisheries). Regarding sampling data,
+<span style="font-weight:bold">Medfisis 1.1</span> can store, manage and perform statistical analysis for sampling surveys based on
+<span style="font-weight:bold"><a name="random">random sampling</a></span> and <span style="font-weight:bold">
+<a name="stratified_random">stratified random sampling</a></span>. <br>
+Future developments of Medfisis will be able to store, manage and perform statistical analysis of sampling data collected based on more sophisticated methodologies , such as cluster sampling and multistage sampling.
+<br>
+</p>
+<p style="margin-bottom:0.35cm; font-family:Arial">However in order to enable analysis of sampling data, a complete description of the sampling process must be provided. This includes: identification of sampling design and storage of the metadata associated
+ - like size of population, size of sample a description of the sample units, if stratified sampling used, also a description of the strata and the population and sample distribution per strata.
+<br>
+</p>
+<h2 style="margin-bottom:0.35cm; font-family:Arial"><a class="mozTocH2" name="mozTocId424567">RATIONAL OF DATA HIERARCHY</a></h2>
+<span style="font-family:Arial">The hierarchical organisation of Medfisis to store fisheries data, follows&nbsp; the logic of the description of a data collection process.
+</span><span style="font-family:Arial">It starts by <br>
+Figure shown below presents the hierarchy organisation of the levels for data storage in MedFisis application.</span><span style="font-family:Arial">. If data source logbooks, then the user will have to come through a process of description of the geographical
+ and temporal scope - the sampling frame, then the description of the group of landing sites included in the process, and the identification of the vessels, fishing trips and so forth until the data on catch had been submitted. However, if data sourceis artisanal
+ fisheries, two more levels&nbsp; <br>
+<br>
+It begins by the definition of the data collection process - defining the geographical and temporal scope - by creating the
+<span style="font-weight:bold">sampling frame</span>. After the frame became initialised, the sampling process needs to be described. the Thus creating the minor strata which corresponds to Group of landings sites being this the first major level to be considered.
+ From the minor strata two differentes approach may occur given the nature of data source in use. I<br>
+Logbooks, user must define the vessels for which information has been collected for each minor strata created. Thus, for each vessel information on fishing trips, fishing operation and catch shall be entered.
+<br>
+For Artisanal fisheries, after the definition of the minor strata, user must identify levels taken below to characterise the sampling process. Thus, for each minor strata - Group of landing sites - the landing sites considered shall be identified, and for each
+ of this landing site - cell - the type of vessels shall be characterised.With the characterisation of the vessels type, the follow level will be the same as for the logbooks, with the identification of each vessel and the fishing activity. (fishing trips/operations
+ and catch). The hierarchy drives the user to give information that characterises the sampling process moving through out a process of
+</span><span style="font-family:Arial">increasing </span><span style="font-family:Arial">details&nbsp; till the moment of the proper data entering. Catch and effort data.<br>
+<br>
+we consider two standard sampling processes: logbook and sampling. These two processes have some common stages in the beginning and in the end, and the sampling process adds a few more levels in the middle. This structure is more easily perceived looking at
+ the database table flow, bellow.</span><span style="font-family:Arial">Thus, we have 4 stages on the
+</span><em style="font-family:Arial">logbook</em><span style="font-family:Arial"> sampling (Minor Strata, Vessel, Trip and Operation) and 6 stages in the
+</span><em style="font-family:Arial">sampling</em><span style="font-family:Arial"> sampling</span><br style="font-family:Arial">
+<span style="font-family:Arial">(Minor Strata, cell, Vessel Type, Vessel, Trip and Operation).</span><span style="font-family:Arial"></span><br style="font-family:Arial">
+<br style="font-family:Arial">
+<span style="font-family:Arial"></span><br>
+<br>
+<img alt="Data Hierarchy" style="width:569px; height:493px"><br>
+<h2 style="margin-bottom:0.35cm; font-family:Arial"><a class="mozTocH2" name="mozTocId820713"><b>Navigation through Forms
+<br>
+</b></a></h2>
+<p></p>
+<p style="font-family:Arial">The Database Module of Medfisis has an interface with eight main forms: Frame, Minor Strata, Cell, Vessel Type, Vessel, Fishing Trip, Fishing Operation and Catch. All forms have a similar design structure; a sub-form showing a list
+ of records previously introduced, and a sub-form, &quot;<span style="font-weight:bold"><a name="Details"></a>Details</span>&quot;, where user is allowed to enter new records. The sub-form
+<span style="font-weight:bold">Details</span> may be activated by simple selecting a record from the list, or by clicking the button &quot;<span style="font-weight:bold"><a name="create_new_record">Create new record</a></span>&quot;. By clicking the button
+<span style="font-weight:bold">Close</span>, sub-form <span style="font-weight:bold">
+Details</span> gets inactive and not visible, becoming only visible the list of records introduced. Each form within the Details sub-form has a
+<a name="comment_window"></a><span style="font-weight:bold">comment window</span> where user is invited to introduce the relevant information for a purpose of documentation.
+<br>
+</p>
+<p style="font-family:Arial">For each record entered and showed in the list user is allowed to
+<span style="font-weight:bold"><a name="edit"></a>edit</span>, <span style="font-weight:bold">
+<a name="modify"></a>modify</span> and <span style="font-weight:bold"><a name="delete"></a>delete</span>. For that, user must select the line containing the record and the buttons on the right side of the form will execute the needed order.
+<br>
+</p>
+<h4 style="font-family:Arial"><a name="Editing_Button"></a>Editing Button&nbsp;</h4>
+<table border="1" cellpadding="2" cellspacing="2" style="text-align:left; width:561px; height:140px">
+<tbody>
+<tr>
+<td style="vertical-align:top"><img alt="Create new record" title="Create new
+              record" style="width:23px; height:24px"></td>
+<td style="vertical-align:top">Create New Record</td>
+</tr>
+<tr>
+<td style="vertical-align:top"><img alt="Edit record" title="Edit record" style="width:28px; height:26px"></td>
+<td style="vertical-align:top">Edit Record</td>
+</tr>
+<tr>
+<td style="vertical-align:top"><img alt="delete record" title="delete record" style="width:30px; height:26px"></td>
+<td style="vertical-align:top">Delete Record</td>
+</tr>
+<tr>
+<td style="vertical-align:top"><img alt="setup_tem_chang" title="setup
+              teemporary changes" style="width:27px; height:28px"></td>
+<td style="vertical-align:top">Setup temporary changes in the sampling frame</td>
+</tr>
+</tbody>
+</table>
+&nbsp;
+<h4 style="font-family:Arial"><a name="Navigation_Buttons"></a>Navigation Buttons
+</h4>
+<p><span style="font-family:Arial">For navigation between forms user is allowed to jump to the next level just after the previous been finalised with success. Whenever a record is successful introduced, the button next on the bottom of the form will get activate
+ and will allow the user to be prompt to the following level. User os allowed to navigate back and force through the forms by clicking on the previous and next buttons.</span>
+<br>
+</p>
+<p><img alt="nav_forms" title="navigation throught forms" style="width:177px; height:48px"><br>
+</p>
+<p><br>
+<span style="font-family:Arial">On the top of each form, a path showing details on the sampling frame being introduced is shown. Along with the path also the nature of the sampling frame - Artisanal Fisheries or logbooks - is presented.<br>
+This information allow the user to better follow the information being introduced by always get the identification of the group of data being work with.<br>
+</span></p>
+<p><span style="font-family:Arial"><img title="path" alt="path" style="width:990px; height:97px"><br>
+</span></p>
+<h4><span style="font-family:Arial"><a name="Help_Function"></a>Help Function<br>
+</span></h4>
+<p style="font-family:Arial">All forms support right-click<a name="context_menus"></a> context menus to commonly used commands for that view. All views support context help. User may press F1 anywhere in Medfisis to get help on the item that currently has the
+ focus. User may also use the<a name="Context_Help"> Context Help</a> tool by simply click on the item for which wants to get help on.</p>
+<h1 style="margin-bottom:0.35cm; font-family:Arial"><a class="mozTocH1" name="mozTocId667469"><span lang="en-US">HOW TO STORE FISHERY DATA</span></a></h1>
+<p style="margin-bottom:0.35cm; font-weight:normal; font-family:Arial">When Medfisis is initialized user is prompt to the following entry screen.</p>
+<p style="margin-bottom:0.35cm; font-family:Arial"></p>
+<p style="margin-top:0.21cm; font-family:Arial"><img alt="entry screen" name="objectos gráficos1" align="middle" style="width:30%; height:40%; border:0px solid"><br clear="LEFT">
+Medfisis entry screen.</p>
+<br clear="LEFT" style="font-family:Arial">
+<span style="font-family:Arial">To create or edit a sampling operation, user must select the &quot;File-&gt;New&quot;, or alternatively click on first button of tool bar, being directly prompt to the sampling widget.
+</span>
+<h2 style="margin-bottom:0.35cm; font-family:Arial"><a class="mozTocH2" name="mozTocId46540">Creating the Sampling frame</a></h2>
+<p style="margin-bottom:0.35cm; font-family:Arial"><span style="font-family:Arial">The entry point for data collection is acceded through the first form – FRAME. This form allows the definition of the Sampling Frame.</span>
+</p>
+<p style="margin-bottom:0.35cm; font-family:Arial"><img name="Moldura1" alt="Moldura1" vspace="7" style="width:30%; height:40%"></p>
+<p style="margin-bottom:0.35cm; font-family:Arial">The <span style="font-weight:bold">
+sampling frame</span> is the most basic structure to define the data collection process where characterizes both
+<span style="font-weight:bold">physically</span> - set of vessels, grouped by landing sites (LS) and groups of landing sites (GLS) - and
+<span style="font-weight:bold">temporally</span> - time validity - the scope of the data collection operation.
+</p>
+<p style="margin-bottom:0.35cm; font-family:Arial">A sampling frame can be initialized either by choosing an existent one -
+<span style="font-weight:bold">copy from a pre-existent</span> - or <span style="font-weight:bold">
+creating a new one from scratch</span>.</p>
+<h3 style="margin-bottom:0.35cm; font-family:Arial"><a class="mozTocH3" name="mozTocId859248">Create a new frame from scratch:</a></h3>
+<p style="margin-bottom:0.35cm; font-family:Arial">A new frame is initialised by selecting in the sub-form Physical frame “Create New” and then “Create from Scratch”.&nbsp; The button&nbsp;(...) will prompt to the definition widget, figure below,&nbsp; where the <a name="geographical_frame">geographical
+ frame</a> must be defined by selecting the vessels, landing sites, group of landing sites or even abstract landing site, that compose the frame.<br>
+<img name="Moldura3" alt="Moldura3" vspace="7" style="width:30%; height:40%"></p>
+<p style="margin-bottom:0.35cm; font-family:Arial">Within the definition widget a list of elements are shown in a tree-like structure, with following levels:</p>
+<p style="font-family:Arial">&quot;Location -&gt; Group of Landing Sites -&gt; Landing Sites -&gt; Vessel&quot;.
+<br>
+</p>
+<p style="font-family:Arial">Where &quot;Location&quot;&nbsp; identifies the location of the frame pursuant it nature, i.e,&nbsp;
+<span style="font-weight:bold">Root</span> - if it's a active frame or <span style="font-weight:bold">
+Recycled</span>- for inactive frames. The legend for each element presented in the sampling frame may be seen by selecting the proper button &quot;Legend &quot; in the bottom of the window. Along with he button &quot;legend&quot;, the user may also find two buttons to expand and
+ collapse the levels presented in the geographical frame.<br>
+</p>
+<p style="margin-bottom:0.35cm; font-family:Arial">User may add or delete levels of the tree-like structure by right clicking on the top of the selected item. Each element may be edit by call F2 when in top of the selected element.
+<br>
+</p>
+<h3 style="margin-bottom:0.35cm; font-family:Arial"><a class="mozTocH3" name="mozTocId527307">Create a new frame by copy a pre-existent one</a></h3>
+<p style="margin-bottom:0.35cm; font-family:Arial">A new frame is initialized when in the Details/Physical frame the user selects “Create New” and then “Create from Scratch”. The button ??? will prompt to the definition widget (fig 2) for the selection of the
+ vessels, landing sites, group of landing sites or even abstract landing site a list of the frames already integrated in the database and it time validity -</p>
+<p style="margin-bottom:0.35cm; font-family:Arial">Choose a sampling frame;</p>
+<h3 style="margin-bottom:0.35cm; font-family:Arial"><a class="mozTocH3" name="mozTocId539043">Define the time validity</a></h3>
+<p style="margin-bottom:0.35cm; font-family:Arial">After concluding the geographical characterization, user is prompt again to the first frame screen to define the time validity.
+</p>
+<p style="margin-bottom:0.35cm; font-family:Arial"><span style="font-weight:bold"><a name="time_validity">Time validity</a></span> is the period for which data has been collected. In some situation differences may occur between the period of data collection and the period to which data
+ refers to. In this situation, to assure the correctness of posterior procedures, the period to which data refers shall be adopted.<br>
+</p>
+<p style="margin-bottom:0.35cm; font-family:Arial">To set time validity a starting date and end date must be entered in the
+<span style="font-style:italic">sub-form Details/Time Frame</span>.&nbsp; <span style="font-weight:bold">
+Note the time period here defined will constitute a constraint to all subsequent data entries of the posterior levels.</span><br>
+</p>
+<p style="margin-bottom:0.35cm; font-family:Arial">Along with choosing a physical frame, and determining its validity, the sampling frame gets defined with the characterization of the
+<span style="font-weight:bold">sampling process</span>.</p>
+<h3 style="margin-bottom:0.35cm; font-family:Arial"><a class="mozTocH3" name="mozTocId41378">Define the sampling process</a></h3>
+<p style="margin-bottom:0.35cm; font-family:Arial">The correct description of the sampling procedures is crucial for the posterior procedures to be applied to&nbsp; data in order to get final estimates, such as (Total catch; total effort; CPUE; etc.). The identification
+ of the sampling methodologies will constraint the algorithms to be applied to sample observations as well as the correct description of the sampling process&nbsp;
+<br>
+</p>
+<p style="margin-bottom:0.35cm; font-family:Arial"><img alt="sampling_description" style="width:30%; height:40%; border:0px solid"></p>
+<p style="margin-bottom:0.35cm; font-family:Arial">To give a complete description of the sampling process the following information needs to be collected. we also want to collect some more information about the sampling process itself.
+<br>
+</p>
+<p style="margin-bottom:0.35cm; font-family:Arial">Global strategy – identify the overall sampling methodology applied in the survey design - Random sampling, stratified random sampling.
+</p>
+<p style="margin-bottom:0.35cm; font-family:Arial">Sample Size – Number of elements to be taken from the population;
+</p>
+<p style="margin-bottom:0.35cm; font-family:Arial">Population Size – dimension of the population.</p>
+<p style="margin-bottom:0.35cm; font-family:Arial">If the sampling methodology is Stratified Random Sampling, then it is also need to identify sample size by strata (<span style="font-style:italic">n</span><small><small>i</small></small>), as well as population
+ size per each strata <span style="font-style:italic">N</span><small><small>i</small></small>, each strata will correspond to one Level.
+<br>
+</p>
+<h2 style="margin-bottom:0.35cm; font-family:Arial"><a class="mozTocH2" name="mozTocId198272">Define Minor Strata</a></h2>
+<p style="margin-bottom:0.35cm; font-family:Arial">The Minor Strata is defined by a Group of landing sites together with a time validity. It represents the first level of&nbsp; to characterise the sampling process being the way of aggregate information by major
+ geographical location. <br>
+</p>
+<p style="margin-bottom:0.35cm; font-family:Arial">To Create New Minor Strata (MS), first of all user must enter the designation of the new Minor Strata and then enter the Minor Strata information within the
+<span style="font-style:italic">Details</span> window. By default MedFisis set as designation &quot;New Minor Strata&quot;.&nbsp;&nbsp;</p>
+<p style="margin-bottom:0.35cm; font-family:Arial">To create a new Minor Strata user needs to select a Group of Landing Site (GLS) from scroll-list where all the GLS belonging to the Physical&nbsp; frame will be shown and then characterise it
+<span style="font-style:italic">activity status</span>. The <span style="font-style:italic">
+Activity Status</span> of a GLS characterise either the fishing activity, if active or not active, or the type of answer coming from that GLS, i.e., if logbooks had been filled in.
+<br>
+</p>
+<p style="margin-bottom:0.35cm; font-family:Arial">Along with GLS user must identify the period for which information has been collected in that given GLS. The time validity is defined by identifying the start and end date. Note that dates must be comprised
+ within temporal validity of the sampling frame.<br>
+</p>
+<h2 style="margin-bottom:0.35cm; font-family:Arial"><a class="mozTocH2" name="mozTocId271577">Define the Cell Level</a><br>
+</h2>
+<p></p>
+<p><style>
+<!--
+@font-face
+	{font-family:Calibri}
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif"}
+.MsoChpDefault
+	{font-size:10.0pt;
+	font-family:"Calibri","sans-serif"}
+@page WordSection1
+	{margin:70.85pt 3.0cm 70.85pt 3.0cm}
+-->
+</style></p>
+<p class="MsoNormal" style="margin-bottom:0.0001pt; line-height:normal"><span lang="EN-US"><span style="font-family:Arial">The Cell&nbsp; represents the level of the landing site (LS). Cell level only has relevance for the description of the sampling process for
+ artisanal fisheries since it collects the relevant information to general describe the sampled vessels in each landing site.&nbsp;
+</span><br>
+<img title="Cell tab" alt="cell tab" style="width:30%; height:40%"><br>
+<br>
+</span><span lang="EN-US" style="font-family:Arial">Therefore user needs to give details on the number of vessels observed, from these, the ones that are active, inactive&nbsp; and on vessels observed in the LS coming from a different LS. In this level user is allowed
+ to setup any temporary change to the frame initially defined, for that before move to next level it's mandatory the inspection of the elements identified on the geographical frame. Thus after to complete all fields
+</span><span lang="EN-US" style="font-family:Arial">to create the New Cell, user must navigate to the definition form by selecting the Button (...) in the tool-bar right side of the form. &nbsp;
+<br>
+</span></p>
+<p class="MsoNormal" style="margin-bottom:0cm; margin-bottom:.0001pt; line-height:normal">
+<span lang="EN-US" style="font-family:Arial"><br>
+Fields requested in Details sub-form:</span></p>
+<p class="MsoNormal" style="margin-bottom:0.0001pt; line-height:normal; font-family:Arial">
+<span lang="EN-US"><br>
+<span style="font-weight:bold">Number of vessels</span> - number of vessels belonging to landing site with importance for the sampling purpose</span></p>
+<p class="MsoNormal" style="margin-bottom:0.0001pt; line-height:normal; font-family:Arial">
+<span lang="EN-US"><span style="font-weight:bold">Number of active vessel</span> - subset of active vessels within the total number of vessels with fishing activity during the reference period</span></p>
+<p class="MsoNormal" style="margin-bottom:0.0001pt; line-height:normal; font-family:Arial">
+<span lang="EN-US"><span style="font-weight:bold">Number inactive vessels</span> - subset of inactive vessels within the total number of vessels without fishing activity during the reference period</span></p>
+<p class="MsoNormal" style="margin-bottom:0.0001pt; line-height:normal; font-family:Arial">
+<span lang="EN-US"><span style="font-weight:bold">Number of vessels from outside</span> - vessels with fishing activity in the landing site cell but originally registered in some other landing site.</span></p>
+<p class="MsoNormal" style="margin-bottom:0.0001pt; line-height:normal; font-family:Arial">
+<span lang="EN-US"><span style="font-weight:bold">Start date and end date</span> - define the period during which observation had been taken from that particular landing site. Along with dates and whenever</span><span lang="EN-US"><span style="font-family:Arial">
+ relevant, and known, user may tick on the &quot;<span style="font-weight:bold">has time</span>&quot; box, enabling the field for the collection of the time at start and at the end of the sampling at the landing site.</span> &nbsp;
+</span></p>
+<p class="MsoNormal" style="margin-bottom:0.0001pt; line-height:normal; font-family:Arial">
+<span lang="EN-US"><br>
+The <a name="comments_window">comments window</a>allow user to add some additional information with relevance for the good comprehension of the sampling process namely for the level where data has been input.</span></p>
+<p class="MsoNormal" style="margin-bottom:0cm; margin-bottom:.0001pt; line-height:normal">
+<span lang="EN-US"><span style="font-family:Arial"></span><br>
+</span></p>
+<h2 style="margin-bottom:0.35cm; font-family:Arial"><a class="mozTocH2" name="mozTocId530427">identify the Vessels Type</a></h2>
+<p></p>
+<p><style>
+<!--
+@font-face
+	{font-family:Calibri}
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif"}
+.MsoChpDefault
+	{font-size:10.0pt;
+	font-family:"Calibri","sans-serif"}
+@page WordSection1
+	{margin:70.85pt 3.0cm 70.85pt 3.0cm}
+-->
+</style></p>
+<p class="MsoNormal" style="margin-bottom:0.0001pt; line-height:normal"><span lang="EN-US">Together with the Cell Level, the level of the Vessel Type</span><span lang="EN-US"> only
+</span><span lang="EN-US">has relevance - therefore it only gets activate - for the definition of the sampling process for the artisanal fisheries.<br>
+&nbsp;Within this form user shall provide further details about the vessels selected in each landing site, now by characterising the number of vessels observed per each vessel type.&nbsp;</span><span lang="EN-US"> Further information please consult Vessel type.</span></p>
+<p class="MsoNormal" style="margin-bottom:0.0001pt; line-height:normal"><img alt="Vessel Type" title="Vessel Type tab" style="width:30%; height:40%"><br>
+<span lang="EN-US"></span></p>
+<p class="MsoNormal" style="margin-bottom:0cm; margin-bottom:.0001pt; line-height:normal">
+<span lang="EN-US"><br>
+As in previous forms, <a name="identify_vessel_type">Vessel type&nbsp;</a> shows a list of the vessel types already created for the group &quot;Sampling Frame -&gt; Minor Strata -&gt; Cell&quot; that user is entering, and a sub-form &quot;<span style="font-weight:bold">Details</span>&quot; to enter new values for other
+<span style="font-weight:bold">&quot;vessel type&quot;</span>. <br>
+</span></p>
+<p class="MsoNormal" style="margin-bottom:0.0001pt; line-height:normal"><span lang="EN-US">Scroll list Vessel type shows the&nbsp; vessel types identified for the current Landing Site at the Cell level.&nbsp;</span></p>
+<p class="MsoNormal" style="margin-bottom:0cm; margin-bottom:.0001pt; line-height:normal">
+<span lang="EN-US">As for Cell level, user must enter the number of vessels observed, from those the ones with activity and those without activity and the number of vessels observed in current Landing Site that originally belong to another Landing Site. For
+ a complete description of each field please consult &quot;<span style="font-weight:bold">Cell Level - Sub-form Details</span>&quot; Note the sum of vessels identified in each tab, n vessels, active vessels, inactive vessels and outside vessels must fit the numbers identified
+ on the cell level.</span><br>
+<span lang="EN-US"></span></p>
+<h2 style="margin-bottom:0.35cm; font-family:Arial"><a class="mozTocH2" name="mozTocId374862">Identify the Vessels</a></h2>
+<p></p>
+<p><style>
+<!--
+@font-face
+	{font-family:Calibri}
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif"}
+.MsoChpDefault
+	{font-size:10.0pt;
+	font-family:"Calibri","sans-serif"}
+@page WordSection1
+	{margin:70.85pt 3.0cm 70.85pt 3.0cm}
+-->
+</style></p>
+<p class="MsoNormal" style="margin-bottom:0cm; margin-bottom:.0001pt; line-height:normal">
+<span lang="EN-US">Form Vessel allows the user to identify the vessels for which information has been collected and is going to be entered on the following levels, whether it refer to sampled vessels - artisanal fisheries vessels - or vessels sending regular
+ information via logbooks. </span></p>
+<p class="MsoNormal" style="margin-bottom:0cm; margin-bottom:.0001pt; line-height:normal">
+<span lang="EN-US">&nbsp;<img alt="Vessel tab" title="Vessel tab" style="width:30%; height:40%"></span></p>
+<p class="MsoNormal" style="margin-bottom:0.0001pt; line-height:normal"><span lang="EN-US"><br>
+</span><span lang="EN-US"><br>
+As previous forms, <span style="font-weight:bold">the form Vessel</span> is composed by two main sub-forms, one showing a list of the vessels already identified for current group &quot;Frame-&gt;Minor Strata -&gt;Cell-&gt;Vessel Type&quot;,&nbsp; and a details sub-form where new vessels
+ may be inserted. </span><span lang="EN-US"><br>
+</span></p>
+<p class="MsoNormal" style="margin-bottom:0.0001pt; line-height:normal"><span lang="EN-US">Sub-form details:</span></p>
+<p class="MsoNormal" style="margin-bottom:0cm; margin-bottom:.0001pt; line-height:normal">
+<span lang="EN-US"><span style="font-weight:bold">Vessel</span> <span style=""></span>- Scroll list with the identification of the vessels belonging to the frame that fulfils the criteria of previous levels, i.e, belong to the Landing Site and to the Vessel
+ type previously selected. </span></p>
+<p class="MsoNormal" style="margin-bottom:0cm; margin-bottom:.0001pt; line-height:normal">
+<span lang="EN-US"><span style="font-weight:bold">Sample origin</span> -&nbsp; Sample origin characterises the process of data collection by allowing the user to select how information had been collected ( by a sampler;&nbsp; sent by post; delivered to fishery office;
+ not known, etc.).&nbsp; If&nbsp; this information is not known user may select n/a for not available or unknown.</span></p>
+<p class="MsoNormal" style="margin-bottom:0cm; margin-bottom:.0001pt; line-height:normal">
+<span lang="EN-US"><span style="font-weight:bold">Status - </span>status filed characterises the information regarding it quality and level of completeness.&nbsp; For further details please consult
+<span style="font-weight:bold">&quot;Vessel - Status&quot;.</span></span></p>
+<p class="MsoNormal" style="margin-bottom:0cm; margin-bottom:.0001pt; line-height:normal">
+<span lang="EN-US"><span style="font-weight:bold">Number of fishing trips</span> - identify the number of fishing trips performed by the selected vessel. Information on fishing trips for the sampling process<span style="">&nbsp;
+</span>needs to correspond to fishing trips with catch observations in order to assure correctness of future estimates.</span></p>
+<h2 style="margin-bottom:0.35cm; font-family:Arial"><a class="mozTocH2" name="mozTocId554813">Enter the Fishing trip</a></h2>
+<p></p>
+<p><style>
+<!--
+@font-face
+	{font-family:Calibri}
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif"}
+.MsoChpDefault
+	{font-size:10.0pt;
+	font-family:"Calibri","sans-serif"}
+@page WordSection1
+	{margin:70.85pt 3.0cm 70.85pt 3.0cm}
+-->
+</style></p>
+<p class="MsoNormal" style="margin-bottom:0.0001pt; line-height:normal"><span lang="EN-US">With the initialisation of the Fishing trip level, user has finalised the introduction of Metadata (data to characterise data been collected), and is prompt to a form
+ where fisheries data starts to be entered. <br>
+The form is composed by two main sub-forms, one showing a list of the fishing trips previously entered and the sub-form &quot;Details&quot; where user is enabled to enter a new&nbsp; fishing trip.<br>
+&nbsp;For each fishing trip, one need to provide information on trip duration, crew, fishing operations, gears used, fishing zones and total catch.&nbsp;
+<br>
+<br>
+</span></p>
+<p class="MsoNormal" style="margin-bottom:0cm; margin-bottom:.0001pt; line-height:normal">
+<img alt="fishing trip
+        tab" title="fishing trip tab" style="width:30%; height:40%"><br>
+<span lang="EN-US"></span></p>
+<p class="MsoNormal" style="margin-bottom:0cm; margin-bottom:.0001pt; line-height:normal">
+<span lang="EN-US"><br>
+<span style="font-family:Arial">Details window:</span></span></p>
+<p class="MsoNormal" style="margin-bottom:0.0001pt; line-height:normal; font-family:Arial">
+<span lang="EN-US"><span style="font-weight:bold">Sampler</span> - Identify the person in charge for the collection of the sampling form. Usually for the logbooks this kind of information is not relevant, if so please choose&nbsp; n/a.
+</span></p>
+<p class="MsoNormal" style="margin-bottom:0.0001pt; line-height:normal; font-family:Arial">
+<span lang="EN-US"><span style="font-weight:bold">Landing site</span> - Identification of the landing site where vessels has landed. The identification of the Landing site is critical for logbooks, since for this data source is the first level LS are identified.
+ For the artisanal fisheries Landing Sites must be in line with the ones chosen on the level
+</span><span lang="EN-US">cell </span><span lang="EN-US">.&nbsp; <span style="font-weight:bold">
+Attention should be paid for the&nbsp; differences between both type of frames.</span></span></p>
+<p class="MsoNormal" style="margin-bottom:0.0001pt; line-height:normal; font-style:italic; font-family:Arial">
+<span lang="EN-US"><span style="font-weight:bold">N. of professional fishermen</span> - Number of fishermen belonging to the crew that have as main professional activity the fisheries;
+</span></p>
+<p class="MsoNormal" style="margin-bottom:0.0001pt; line-height:normal; font-family:Arial">
+<span lang="EN-US"><span style="font-style:italic; font-weight:bold">N. of part-time fishermen -
+</span><span style="font-style:italic">Number of fishermen for which the fisheries represents a secondary activity or for which the fisheries is not a full time activity.&nbsp;
+</span></span></p>
+<p class="MsoNormal" style="margin-bottom:0.0001pt; line-height:normal; font-family:Arial">
+<span lang="EN-US"><span style="font-weight:bold">Start Date</span> - Date when trip has begun. Whenever possible and known, information about the time must be collected in order to enable posterior calculations on fishing effort. To activate the field to collect
+ time, please add a tick to the box &quot;Has time&quot;.&nbsp; </span></p>
+<p class="MsoNormal" style="margin-bottom:0.0001pt; line-height:normal; font-family:Arial">
+<span lang="EN-US"><span style="font-weight:bold">End Date</span> - The ending date of the trip.
+</span></p>
+<span style="font-family:Arial"></span>
+<p class="MsoNormal" style="margin-bottom:0.0001pt; line-height:normal; font-family:Arial">
+<span lang="EN-US"><span style="font-weight:bold">Number of operations</span> - Number of fishing operations performed during the fishing trip regardless of the gear/gears used.
+</span></p>
+<p class="MsoNormal" style="margin-bottom:0.0001pt; line-height:normal; font-family:Arial">
+<span lang="EN-US"><span style="font-weight:bold">Catch</span> - total catch taken during the complete fishing trip. If total amount is expressed in kg, the&nbsp; field catch shall be selected to input data, otherwise Catch by Box or Catch by units.
+</span></p>
+<p class="MsoNormal" style="margin-bottom:0.0001pt; line-height:normal; font-family:Arial">
+<span lang="EN-US"><span style="font-weight:bold">Catch by box </span>- field to input catch expressed in number of boxes and average weight per box.
+</span></p>
+<p class="MsoNormal" style="margin-bottom:0.0001pt; line-height:normal; font-family:Arial">
+<span lang="EN-US"><span style="font-weight:bold">Catch by units</span> - When other bin than box had been used, information on catch shall be input in the field catch by unit along with average weight by unit.</span></p>
+<p class="MsoNormal" style="margin-bottom:0.0001pt; line-height:normal; font-family:Arial">
+<span lang="EN-US"><span style="font-weight:bold">Gears used</span> - Fishing gears deployed during the fishing trip. If more than one gear had been used, then a multiple selection shall be performed where all the fishing gears must be included. On the following
+ level, &quot;Fishing Operation&quot;,The gears selected within thee fishing trip will be the ones available to introduce fishing operation data.
+</span></p>
+<p class="MsoNormal" style="margin-bottom:0.0001pt; line-height:normal; font-family:Arial">
+<span lang="EN-US"><span style="font-weight:bold">Fishing zone</span> - Fishing area(s) where vessel has deployed fishing effort. If more than one fishing area, than a multiple selection must be performed.
+</span></p>
+<h2 style="margin-bottom:0.35cm; font-family:Arial"><a class="mozTocH2" name="mozTocId325239">Characterise the Fishing operation</a></h2>
+<p style="font-family:Arial"></p>
+<p style="font-family:Arial">Fishing Operation tab collects details about each fishing operation, namely data on the effort deployed by gear, gear characteristics and total catch per each fishing operation/gear. The
+<span style="font-weight:bold">Fishing operation</span> form is composed by two main sub-forms: a sub-form showing the list of the fishing operations previously introduced and a sub-form &quot;<span style="font-weight:bold">Details</span>&quot; which enables the user
+ to introduce new fishing operations.</p>
+<p style="font-family:Arial">Sub-form Details:</p>
+<p style="font-family:Arial"><span style="font-weight:bold">Order Number</span> - Identifies the order of the fishing operation. The order number needs to be introduced by the user and must identify the order for which the fishing operations took place.
+</p>
+<p style="font-family:Arial"></p>
+<p style="font-family:Arial"><span style="font-weight:bold">Fishing zone</span> - Identifies the fishing area where the fishing operation took place. If the fishing operation took place in more then one fishing zone, user must identify the one that correspond
+ to the larger duration.&nbsp; <br>
+</p>
+<p><span style="font-family:Arial"><span style="font-weight:bold">Start and End Date</span> -&nbsp; The identification of the moment where operation has started and has finished. To enable future estimation of effort variables, the information about the time of
+ beginning and term of fishing operation needs to be entry. &nbsp; &nbsp;<span style="font-weight:bold">
+</span></span><br style="font-family:Arial; font-weight:bold">
+<span style="font-family:Arial"><span style="font-weight:bold">Gear</span> - Identification of the fishing gear used during fishing operation. details</span><br style="font-family:Arial; font-weight:bold">
+<span style="font-family:Arial"><span style="font-weight:bold">Units</span> - Units and size are the metrics collected to characterise the fishing gear, where:<br>
+Unit - Identifies the number of devices deployed for passive fishing gear such as: trammel nets, gilnets, longlines, etc. If mobile gears had been deployed, than the field units must be used to collect data on&nbsp;
+</span><br style="font-family:Arial">
+<span style="font-family:Arial"><span style="font-weight:bold">Size</span> - as well as field unit,
+<span style="font-weight:bold">Size</span> vary with the type of gear in use. For passive gears, size identify the length of each unit of passive gear that had been set, e.g 3 trammel nets; For mobile gears - seine and trawl, the field size collects the information
+ about the mesh size.&nbsp; </span><br style="font-family:Arial">
+<span style="font-family:Arial"></span><span style="font-family:Arial"><span style="font-weight:bold">Catch</span> - Total catch resulting from the fishing operation. Note, the sum of the catch for each fishing operation must be equal to the total catch added
+ for the fishing trip. catch can be inserted as a total expressed in kg, or if organised by standard bins, the following must be chosen:</span><br style="font-family:Arial">
+<span lang="EN-US" style="font-family:Arial">catch by box - field to input catch expressed in number of boxes and average weight per box.
+</span><br style="font-family:Arial">
+<span lang="EN-US" style="font-family:Arial">catch by units - When other bin than box had been used, information on catch shall be input in the field catch by unit along with average weight by unit.</span><br style="font-family:Arial">
+<span style="font-family:Arial"><span style="font-weight:bold">Commercial category</span> - The commercial category identifies the specific composition of the catch, not identifing each specie but identifying the major group of species (small pelagics, demersal
+ species, etc.). For further details please consult Commercial Category. </span><br>
+</p>
+<p><img alt="fishing operation
+        tab" title="fishing operation tab" style="width:30%; height:40%"><br>
+</p>
+<h2 style="margin-bottom:0.35cm; font-family:Arial"><a class="mozTocH2" name="mozTocId234795">Enter the Catch Data</a><br>
+</h2>
+<p></p>
+<p><style>
+<!--
+@font-face
+	{font-family:Calibri}
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif"}
+.MsoChpDefault
+	{font-size:10.0pt;
+	font-family:"Calibri","sans-serif"}
+@page WordSection1
+	{margin:70.85pt 3.0cm 70.85pt 3.0cm}
+-->
+</style></p>
+<p class="MsoNormal" style="margin-bottom:0.0001pt; line-height:normal; font-family:Arial">
+<span lang="EN-US">The Catch tab, represents the last level for data entering. Current version of MedFisis only allow the identification the catch by commercial category, both for the catch and sample data.<br>
+As for previous forms, Catch form shows a list of the commercial categories introduced before and a sub-form where user can enter new records. The list of Commercial categories that will appear on the scroll list is confined to the ones identified on the previous
+ level, Fishing Operation. <br>
+Details window - information for each commercial category prior identified</span></p>
+<p class="MsoNormal" style="margin-bottom:0.0001pt; line-height:normal"><span lang="EN-US"><span style="font-family:Arial">Totals -total catch taken from the commercial category. As well as for previous screens, information can be filled either by entering
+ total catch or by using information by box or units. </span><br style="font-family:Arial">
+<span style="font-family:Arial">Sub-form Sample, collects information about possible sampling taken from the commercial category identified. Information about number of individuals sampled&nbsp; and average weight of sampled individual. Along with of the sample
+ dimension and the average weight per individual, user needs to identify the weight units used (kg, g).&nbsp;
+</span><br>
+</span></p>
+<p class="MsoNormal" style="margin-bottom:0cm; margin-bottom:.0001pt; line-height:normal">
+<img alt="catch tab" title="catch tab" style="width:30%; height:40%"><br>
+<span lang="EN-US"></span></p>
+<p class="MsoNormal" style="margin-bottom:0cm; margin-bottom:.0001pt; line-height:normal">
+<span lang="EN-US">&nbsp;</span></p>
+<span lang="EN-US"></span>
+<h1 style="margin-bottom:0.35cm; font-family:Arial"><a class="mozTocH1" name="mozTocId46287">REPORTS</a></h1>
+<h2 style="margin-bottom:0.35cm; font-family:Arial"><a class="mozTocH2" name="mozTocId490244">Use pre-defined reports</a></h2>
+<h2 style="margin-bottom:0.35cm; font-family:Arial"><a class="mozTocH2" name="mozTocId132702">Create new Reports</a></h2>
+<h1 style="margin-bottom:0.35cm; font-family:Arial"><a class="mozTocH1" name="mozTocId948642">Glossary</a><br>
+</h1>
+<p style="margin-bottom:0.35cm; font-family:Arial"></p>
+<p style="margin-bottom:0.35cm; font-family:Arial">Activity Status – define the level of activity has been found in the GLS or otherwise give information regarding the sampling process.<br>
+<span lang="EN-US"></span>Commercial Category - <br>
+Group of Landing Sites (GLS) - aggregation of landing portsAbstract Landing Site (ALS) - an object with polymorphic behaviour, than can assume the form of a port or a collector; it can also be a virtual landing site.<br>
+Sampling Frame:<br>
+<span lang="EN-US">Vessel type -the vessel type identifies a group of vessels accordingly with their main fishing gears/faishing activity.</span><span lang="EN-US"></span><span lang="EN-US">Vessel type -the vessel type identifies a group of vessels accordingly
+ with their main fishing gears/faishing activity.<br>
+Vessel - Status <br>
+</span></p>
+</body>
+</html>

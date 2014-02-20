@@ -1,0 +1,32 @@
+ <QHelpCollectionProject version="1.0">
+    <assistant>
+        <title>Medfisis Help</title>
+        <startPage>qthelp://medfisis.app.1_1/doc/index.htm</startPage>
+        <currentFilter>Medfisis1.1</currentFilter>
+        <applicationIcon>medfisis.ico</applicationIcon>
+        <enableFilterFunctionality>false</enableFilterFunctionality>
+        <enableDocumentationManager>false</enableDocumentationManager>
+        <enableAddressBar visible="true">true</enableAddressBar>
+        <cacheDirectory>medfisis/app</cacheDirectory>
+        <aboutMenuText>
+            <text>About Medfisis</text>
+            <text language="pt">Sobre o Medfisis...</text>
+        </aboutMenuText>
+        <aboutDialog>
+            <file>about.txt</file>
+            <file language="pt">sobre.txt</file>
+            <icon>ktip.png</icon>
+        </aboutDialog>
+    </assistant> 
+    <docFiles>
+        <generate>
+            <file>
+                <input>doc_31_12_2011.qhp</input>
+                <output>doc_31_12_2011.qch</output>
+            </file>
+        </generate>
+        <register>
+            <file>doc_31_12_2011.qch</file>
+        </register>
+    </docFiles>	
+ </QHelpCollectionProject>

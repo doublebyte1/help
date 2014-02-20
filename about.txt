@@ -1,0 +1,2 @@
+Medfisis is a software suite with Fisheries Management Tools.
+Its flexible design allow it to integrate logbook data, side-by side with artisanal fisheries data.
